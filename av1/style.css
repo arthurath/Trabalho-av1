@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+:root {
+	--verdeclaro:#c4caaa;
+	--espacamento:30px;
+	--verdeescuro:#333;
+}
+
+
+
+body {
+	background: #333;
+	max-width: 600px;
+	font-family: 'Roboto', sans-serif;
+	margin: auto;
+}
+
+
+
+.barra-topo {
+	background-color: var(--verdeclaro);
+	padding: var(--espacamento);
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.barra-topo span {
+	color: white;
+	text-transform: uppercase;
+}
+
+.barra-topo a {
+	color: #7e8465;
+}
+
+.cabecalho  {
+	background: white;
+	padding: var(--espacamento);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.cabecalho img {
+	width: 80px;
+	height: 80px;
+}
+
+.cabecalho a {
+color:  #333;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.banner div {
+	background: #e3a459;
+	padding: var(--espacamento)
+}
+
+.banner h1 {
+	margin-top: 0;
+}
+
+.banner a {
+	color: #333;
+}
+
+.duascolunas {
+	display: flex;
+}
+
+.duascolunas div{
+	background: white;
+	padding: var(--espacamento);
+	margin: 10px 0;
+}
+
+.duascolunas div:first-child {
+	margin-right: 10px;
+} 
+
+.duascolunas div:last-child {
+	margin-left: : 10px;
+} 
+
+.duascolunas h2 {
+	color: var(--verdeescuro);
+}
+.duascolunas p {
+	color: #aaaaaaaa;
+}
+
+.botao {
+	color: white;
+	background: var(--verdeclaro);
+	border:0;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: all 1px;
+}
+.botao:hover {
+	background: var(--verdeescuro);
+	border-radius:5px;
+	cursor: pointer;
+}
+
+
+
+
+.imagemtexto {
+	display: flex;
+}
+
+.imagemtexto .foto, .imagemtexto .texto {
+	width: 50%;
+}
+
+.imagemtexto .foto {
+	background-image: url("imagens/medImg.jpg");
+	background-size: cover;
+	min-height: 200px;
+}
+
+.imagemtexto .texto {
+	background: white;
+	padding: var(--espacamento);
+	box-sizing: border-box;
+}
+
+.imagemtexto .botao {
+	background: #e2a459;
+}
+
+.imagemtexto.invertido {
+	flex-direction: row-reverse;
+}
+
+.faq {
+	text-align: center;
+	background-color: var(--verdeclaro);
+	padding: var(--espacamento)
+}
+
+.faq h2{
+	font-family: "Times New Roman";
+	width:50%;
+	padding:25%;
+	margin: auto;
+	position: relative;
+	margin: top: 0;
+}
+
+.faq h2:before,  .faq h2:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 150px;
+	height: 2px;
+	background-color: #a9b18a;
+	top: 50%;
+}
+
+.faq h2:before {
+	left: 0;
+}
+
+.faq h2:after {
+	right: 0;
+}
+
+.faq .botao {
+	background-color: #7e8465;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+	.duascolunas, .imagemtexto {
+		flex-direction: column !important;
+	}
+	.imagemtexto .foto, .imagemtexto .texto {
+		width: 100%;
+	}
+
+	.duascolunas div {
+		margin: 10px 0 0 0 !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
